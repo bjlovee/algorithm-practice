@@ -37,23 +37,35 @@ while(number > 1){
 }
 console.log(divisor); // the largest prime factor of 600851475143
 
-function largestPrimeFactor(num) {
-    // Identify which numbers from 2 up until, and including, the number
-    // are prime and are factors of the number
-    if(prime(num)) return num;
-    for(let i = Math.floor(num/2); i > 1; i--) {
-        if(factor(i, num) && prime(i)) return i;
-    }
-    return "There are no prime factors of this number"
-}
+// function largestPrimeFactor(num) {
+//     // Identify which numbers from 2 up until, and including, the number
+//     // are prime and are factors of the number
+//     if(prime(num)) return num;
+//     for(let i = Math.floor(num/2); i > 1; i--) {
+//         if(factor(i, num) && prime(i)) return i;
+//     }
+//     return "There are no prime factors of this number"
+// }
 
-console.log(largestPrimeFactor(10)) //return 5
-console.log(largestPrimeFactor(11)) //return 11
-console.log(largestPrimeFactor(12)) //return 3
-console.log(largestPrimeFactor(13195)) //return 29
+// console.log(largestPrimeFactor(10)) //return 5
+// console.log(largestPrimeFactor(11)) //return 11
+// console.log(largestPrimeFactor(12)) //return 3
+// console.log(largestPrimeFactor(13195)) //return 29
 
 // What is the big O notation of this code?
 
 // O(1) - Looking something up, not iterating over a list at any time
 // O(n) - Iterating through an entire array
 // O(log(n)) - Iterating through part of an array
+
+
+// function doubleAll(arr) {
+//     let doubled = [];
+//     arr.forEach(num => {
+//         doubled.push(num * 2);
+//     });
+//     doubled.forEach(num => {
+//         console.log(num)
+//     })
+//     return doubled;
+// }
